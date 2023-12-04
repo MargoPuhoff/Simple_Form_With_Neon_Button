@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(#141e30, #44474b);
+}
+
+.box{
+  padding: 2.5rem;
+  width: 25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0,.6);
+  transform: translate(-50%, -50%);
+}
+
+h2{
+  margin: 0 0 1.8rem;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+.user-data{
+  position: relative;
+}
+
+input{
+  margin-bottom: 1.8rem;
+  padding: 0.6rem 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  background: transparent;
+}
+
+label{
+  padding: 0.5rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  color: white;
+  transition: .5s;
+}
+
+input:focus ~ label, input:valid ~ label{
+  top: -1rem;
+  left: 0;
+  font-size: 0.75rem;
+  color: #71ade5;
+}
+
+button{
+  margin-top: 2.5rem;
+  padding: 0.6rem 1.25rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  color: #71ade5;
+  background: transparent;
+  transition: .5s;
+}
+
+button:hover{
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.5);
+  background: #71ade5;
+  box-shadow: 0 0 .6rem #71ade5, 0 0 2.5rem #71ade5, 0 0 5rem #71ade5;
+}
